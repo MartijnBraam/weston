@@ -848,6 +848,8 @@ nodist_weston_desktop_shell_SOURCES =			\
 	protocol/weston-desktop-shell-protocol.c
 weston_desktop_shell_LDADD = libtoytoolkit.la
 weston_desktop_shell_CFLAGS = $(AM_CFLAGS) $(CLIENT_CFLAGS)
+weston_tablet_shell_LDADD = libtoytoolkit.la
+weston_tablet_shell_CFLAGS = $(AM_CFLAGS) $(CLIENT_CFLAGS)
 
 if ENABLE_IVI_SHELL
 weston_ivi_shell_user_interface_SOURCES = 				\
@@ -1531,6 +1533,7 @@ BUILT_SOURCES +=				\
 
 EXTRA_DIST +=					\
 	protocol/weston-desktop-shell.xml	\
+	protocol/weston-tablet-shell.xml	\
 	protocol/weston-screenshooter.xml	\
 	protocol/text-cursor-position.xml	\
 	protocol/weston-test.xml		\
