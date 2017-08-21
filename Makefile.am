@@ -841,6 +841,8 @@ weston_info_CFLAGS = $(AM_CFLAGS) $(CLIENT_CFLAGS)
 weston_desktop_shell_SOURCES = 				\
 	clients/desktop-shell.c				\
 	shared/helpers.h
+weston_tablet_shell_SOURCES = 
+	clients/tablet-shell.c
 nodist_weston_desktop_shell_SOURCES =			\
 	protocol/weston-desktop-shell-client-protocol.h	\
 	protocol/weston-desktop-shell-protocol.c
